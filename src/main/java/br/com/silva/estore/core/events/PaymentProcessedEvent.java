@@ -5,9 +5,11 @@
  */
 package br.com.silva.estore.core.events;
 
+import lombok.Getter;
 import lombok.Value;
 
 @Value
+@Getter
 public class PaymentProcessedEvent {
 	private String orderId;
 	private String paymentId;
